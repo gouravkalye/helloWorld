@@ -9,4 +9,4 @@ jobs:
           command: |
             echo 'Hello World!'
             echo 'This is the delivery pipeline'
-            make main.cpp
+            gcc --version
