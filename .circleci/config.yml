@@ -1,14 +1,7 @@
 version: 2.1
-jobs:
-  build:
-      machine:
-      image: ubuntu-1604:201903-01
-      docker_layer_caching: true    # default - false
-
-    steps:
-      - run:
-          name: The First Step
-          command: |
-            echo 'Hello World!'
-            echo 'This is the delivery pipeline'
-            gcc --version
+orbs:
+    hello: circleci/hello-build@0.0.5
+workflows:
+    "Hello Workflow":
+        jobs:
+          - hello/hello-build
