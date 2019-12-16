@@ -5,7 +5,4 @@ workflows:
     "Hello Workflow":
         jobs:
           - hello/hello-build
-          - run:
-    shell: /bin/sh
-    command: |
-      echo Running test
+
