@@ -9,4 +9,3 @@ workflows:
     shell: /bin/sh
     command: |
       echo Running test
-      gcc --version
